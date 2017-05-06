@@ -1,13 +1,14 @@
 # Portal
 
-Download dependencies using `mix deps.get`.
+Download dependencies using `$ mix deps.get`.
 
-Run tests using `mix test`.
+Run tests using `$ mix test`.
 
+Generate docs using `$ mix docs`.
 
 ## Separate server test
-1. Start first node using `iex --sname iliad --cookie secret -S mix`
-2. Open new terminal and run `iex --sname odyssey --cookie secret -S mix`
+1. Start first node using `$ iex --sname iliad --cookie secret -S mix`
+2. Open new terminal and run `$ iex --sname odyssey --cookie secret -S mix`
 
 iliad
 ```

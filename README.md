@@ -1,6 +1,36 @@
 # Portal
 
-**TODO: Add description**
+Download dependencies using `mix deps.get`.
+
+Run tests using `mix test`.
+
+
+## Separate server test
+1. Start first node using `iex --sname iliad --cookie secret -S mix`
+2. Open new terminal and run `iex --sname odyssey --cookie secret -S mix`
+
+iliad
+```
+Portal.shoot(:blue)
+
+blue = {:blue, :"iliad@COMPUTER-NAME"}
+orange = {:orange, :"odyssey@COMPUTER-NAME"}
+
+portal = Portal.transfer(orange, blue, [1, 2, 3, 4])
+Portal.push_right(portal)
+```
+
+odyssey
+```
+Portal.shoot(:orange)
+
+blue = {:blue, :"iliad@COMPUTER-NAME"}
+orange = {:orange, :"odyssey@COMPUTER-NAME"}
+
+Portal.Door.get(orange)
+Portal.Door.get(blue)
+```
+
 
 ## Installation
 

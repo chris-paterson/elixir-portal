@@ -1,5 +1,7 @@
 # Portal
 
+This project demonstrates how to send data from one process to another. 
+
 Download dependencies using `$ mix deps.get`.
 
 Run tests using `$ mix test`.
